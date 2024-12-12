@@ -1,0 +1,93 @@
+.contenedor {
+    background:radial-gradient(circle at 50% 5%, rgba(255, 251, 251, 0.325), transparent 35%),
+    linear-gradient(45deg, #001F54, #02235c);
+    background-size: 100%;
+    animation: glow 6s ease-in-out infinite;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.testimonio {
+    font-size: 32px;
+    margin-bottom: 150px;
+    color: white;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.imagcam {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px white;
+}
+
+.imagari {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px white;
+}
+
+.imagmoni {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px white;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 300px;
+    gap: 30px;
+    border: 1px solid white;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        height: 260vh;
+        background:radial-gradient(circle at 50% 5%, rgba(255, 251, 251, 0.325), transparent 15%),
+        linear-gradient(45deg, #001F54, #02235c);
+        background-size: 100%;
+       
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+
+    }
+
+    .testimonio {
+        margin-top: 200px;
+    }
+}

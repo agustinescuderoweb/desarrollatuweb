@@ -1,0 +1,134 @@
+.espacio{
+  background: radial-gradient(circle at 70% 50%, rgba(255, 251, 251, 0.925), transparent 20%),
+  linear-gradient(45deg, #001F54, #02235c);
+  background-size: 100%;
+  animation: glow 6s ease-in-out infinite;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 150px;
+}
+
+
+.logo {
+    border-radius: 100px;
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 140px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 180px;
+}
+
+.contenedor h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contenedor h2 {
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+
+.button {
+    position: relative;
+    background: rgb(50, 205, 50);
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.93);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .button:hover::before {
+    left: 100%;
+    opacity: 1; /* Aparece el flash */
+  }
+  
+  .buttonbutton:hover {
+    transform: scale(0.5); /* Amplía ligeramente el botón */
+  }
+  
+
+.contenedor h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .espacio {
+    display: flex;
+    flex-direction: column;
+    height: 115vh;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 75%, rgba(255, 251, 251, 0.925), transparent 20%),
+    linear-gradient(45deg, #001F54, #02235c);
+    background-size: 100%;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+  
+
+  .text {
+    padding: 30px;
+  }
+
+  .text h1 {
+    font-size: 26px;
+  }
+
+  .text h2 {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 10px;
+  }
+
+  .imagen {
+    margin: 0;
+    width: 60%;
+  }
+}
