@@ -1,22 +1,27 @@
 .espacio{
-  background: radial-gradient(circle at 70% 50%, rgba(255, 251, 251, 0.925), transparent 20%),
+  background: radial-gradient(circle at 70% 55%, rgba(255, 251, 251, 0.925), transparent 20%),
   linear-gradient(45deg, #001F54, #02235c);
   background-size: 100%;
   animation: glow 6s ease-in-out infinite;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  height: 130vh;
   display: flex;
-  gap: 150px;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
 }
 
+.logos {
+  display: flex;
+  justify-content: flex-start; /* Alinea el logo a la izquierda */
+  align-items: center;
+  padding: 1rem;
+}
 
 .logo {
-    border-radius: 100px;
-    width: 100px;
-    position: absolute;
-    top: 40px;
-    left: 140px;
+  margin-left: 120px;
+  margin-top: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
 }
 
 .contenedor {
@@ -96,18 +101,26 @@
     align-items: center;
   }
 
-  .logo {
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50;
-  }
-
   .contenedor {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 30px;
+}
+
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.logo {
+  margin: 0px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
 }
   
 
@@ -132,3 +145,4 @@
     width: 60%;
   }
 }
+
