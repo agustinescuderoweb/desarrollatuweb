@@ -3,8 +3,11 @@ import "./globals.css";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Desarrolla tu landing page desde cero",
-  description: "Desarrollo de Landing Page",
+  title: "Desarrolla tu Sitio Web desde cero",
+  description: "Desarrolla tu Sitio Web desde cero",
+  icons: {
+    icon: "/logo.ico", // ← Esta línea define el favicon
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
