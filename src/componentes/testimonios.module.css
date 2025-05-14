@@ -3,8 +3,49 @@
     linear-gradient(45deg, #001F54, #02235c);
     background-size: 100%;
     animation: glow 6s ease-in-out infinite;
-    height: 100vh;
+    height: 600px;
+    color: white;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+.contenedor {
+  text-align: center;
+  padding: 2rem;
+}
+
+.testimonio {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.items {
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 600px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  background-color: #001F54;
+  box-shadow: 0px 0px 5px white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.content {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,66 +53,53 @@
 }
 
 .star {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
-
-.testimonio {
-    font-size: 32px;
-    margin-bottom: 150px;
-    color: white;
+.texto {
+  font-size: 34;
+  padding: 0px 40px;
+  margin-bottom: 1rem;
 }
 
-.contenido {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+.nombre {
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 1rem;
 }
 
-.imagcam {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px white;
+.imagen {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 1rem;
 }
 
-.imagari {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px white;
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.imagmoni {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px white;
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    width: 300px;
-    gap: 30px;
-    border: 1px solid white;
-    padding: 50px;
-    border-radius: 20px;
+.botones button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
     .contenedor {
         display: flex;
         flex-direction: column;
-        height: 260vh;
+        height: 800px;
         background:radial-gradient(circle at 50% 5%, rgba(255, 251, 251, 0.325), transparent 15%),
         linear-gradient(45deg, #001F54, #02235c);
         background-size: 100%;
@@ -88,6 +116,6 @@
     }
 
     .testimonio {
-        margin-top: 200px;
+        color: white;
     }
 }

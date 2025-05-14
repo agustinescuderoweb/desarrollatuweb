@@ -1,0 +1,166 @@
+.caroul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:radial-gradient(circle at 50% 50%, rgba(255, 251, 251, 0.925), transparent 35%),
+    linear-gradient(45deg, #001F54, #02235c);
+  margin: auto;
+ 
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  gap: 20px;
+}
+
+.checkin {
+  width: 400px;
+  margin: 50px;
+}
+
+.span {
+  font-size: 26px;
+  color: white;
+  font-weight: 700;
+
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.carouselimag {
+  box-shadow: 0px 0px 20px white;
+  border-radius: 20px;
+}
+
+.imagText {
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.link {
+  margin: 0;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color:  rgb(50, 205, 50);;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px  rgb(50, 205, 50);;
+  }
+
+ .button:hover {
+    background-color:  rgb(50, 205, 50);;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateX(-100%) rotate(45deg);
+    transition: transform 0.6s ease;
+  }
+  
+  .button:hover::before {
+    transform: translateX(100%) rotate(45deg);
+  }
+
+.carouselimag {
+  width: 700px;
+  margin: 40px;
+}
+
+.navButton {
+    font-size: 100px;
+    
+}
+
+.navButton:hover{
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .caroul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .check {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    gap: 20px;
+  }
+
+  .checkin {
+    width: 200px;
+  }
+
+  .navButton {
+    font-size: 40px;
+    margin: 0px 10px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) { 
+  
+  .caroul {
+    height: 700px;
+    padding-bottom: 50px;
+  }
+  
+  .span {
+    padding: 0px 5px;
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  .imagText {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+}
