@@ -33,10 +33,6 @@ function Testimonios() {
     setIndex((prev) => (prev + 1) % testimoniosData.length)
   }
 
-  const anterior = () => {
-    setIndex((prev) => (prev - 1 + testimoniosData.length) % testimoniosData.length)
-  }
-
   useEffect(() => {
     const intervalo = setInterval(() => {
       siguiente()
