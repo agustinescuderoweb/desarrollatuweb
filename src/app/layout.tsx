@@ -41,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Image
               height="1"
               width="1"
+              alt="image"
               style={{ display: 'none' }}
               src="https://www.facebook.com/tr?id=491809267251900&ev=PageView&noscript=1"
             />
