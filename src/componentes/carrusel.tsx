@@ -2,16 +2,18 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import maquillaje from '../../public/maquillaje.webp';
-import montañas from '../../public/montaña.jpg';
+import computacion from '../../public/computadora.jpg';
 import antenas from '../../public/antena.jpg';
-import styles from '@/componentes/carrousel.module.css'
+import styles from '@/componentes/carrousel.module.css';
+import ferrari from '../../public/ferrari.webp';
 import Link from 'next/link';
 
 const Carousel = () => {
   const images = [ 
    { src: maquillaje, link: 'https://ariadnaeventmakeupp.netlify.app/', text: 'Sitio Web creado para una maquilladora'},
-   { src: montañas,  link: 'https://www.huellasandinasmountainshop.com.ar/', text: 'Sitio Web creado para un tienda de ropa'},
-   { src: antenas, link: 'http://www.rytel.net/', text: 'Sitio Web creado para una empresa de Telecomunicaciones'}
+   { src: computacion,  link: 'https://modopc.netlify.app/', text: 'Sitio Web creado para una empresa de computación'},
+   { src: antenas, link: 'http://www.rytel.net/', text: 'Sitio Web creado para una empresa de Telecomunicaciones'},
+   { src: ferrari, link: 'https://ferrari7.netlify.app/', text: 'Sitio replica modelo web Ferrari'}
   
   
   ];

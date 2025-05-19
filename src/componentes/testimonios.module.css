@@ -3,7 +3,7 @@
     linear-gradient(45deg, #001F54, #02235c);
     background-size: 100%;
     animation: glow 6s ease-in-out infinite;
-    height: 600px;
+    height: 800px;
     color: white;
     margin: 0;
     display: flex;
@@ -23,6 +23,7 @@
 .testimonio {
   font-size: 2rem;
   margin-bottom: 1rem;
+  margin-top: 70px;
 }
 
 .items {
