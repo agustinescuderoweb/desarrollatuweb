@@ -1,19 +1,15 @@
 .programas{
-    background:radial-gradient(circle at 50% 50%, rgba(255, 251, 251, 0.925), transparent 35%),
-    linear-gradient(45deg, #001F54, #02235c);
+background: linear-gradient(45deg, #001F54, #02235c);
 background-size: 100%;
 animation: glow 6s ease-in-out infinite;
-height: 100vh;
+height: 120vh;
 margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+color: white;
 }
-
-.programas {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: white;
-}
-
 
 .estilo {
     display: flex;
@@ -84,11 +80,8 @@ margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 300px;
     color: white;
     gap: 50px;
-    margin-top: 300px;
-
 }
 
 .cardone {
@@ -117,8 +110,13 @@ margin: 0;
     text-align: center;
     border-radius: 10px;
     padding: 100px;
-    box-shadow: 0px 0px 15px white;
-    background-color:  #001F54
+    background: rgba(255, 255, 255, 0.1); /* fondo translúcido */
+    backdrop-filter: blur(10px);          /* efecto de difuminado del fondo */
+   -webkit-backdrop-filter: blur(10px);  /* soporte para Safari */
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* borde tenue */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* sombra suave */
+    color: #fff;
  
 }
 
@@ -153,12 +151,13 @@ margin: 0;
 
 .mas {
     color: white;
-    background-color: #06063f;
+    background-color:  rgb(50, 205, 50);
     width: 150px;
     height: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px white;
+    box-shadow: 0px 0px 4px white;
     margin: 10px;
+    font-weight: 600;
 }
 
 .mas:hover {
@@ -194,7 +193,7 @@ margin: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 200vh;
+        height: 250vh;
     }
 
     .web h1 {

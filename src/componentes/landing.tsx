@@ -12,7 +12,7 @@ function landing() {
         <h1>Descarga la guía</h1>
         <h2>3 <strong>Propuestas Webs</strong> para conectar con tu servicio</h2>
         <Image className={styles.imagen} src={como} width={400} alt="imag"></Image>
-        <button className={styles.button}><Link href={"https://drive.google.com/file/d/1-hY3iGjDa15b_555O1RAonX6Kh9WzodA/view?usp=drive_link"}>Descargar la Guía!</Link></button>
+        <button className={styles.button}><Link href={"https://drive.google.com/file/d/1gCLkq6olBTBvsrMM0iNBFUDO0fiy8HOY/view?usp=drive_link"}>Descargar la Guía!</Link></button>
       </div>
       <div className={styles.web}>
          <div className={styles.item}>

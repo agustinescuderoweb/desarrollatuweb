@@ -73,11 +73,15 @@
     display: flex;
     flex-direction: column; /* Apila los elementos verticalmente */
     align-items: flex-start; /* Alinea los elementos a la izquierda */
-    box-shadow: 0px 0px 5px white;
-    border-radius: 20px;
-    color: white;
     width: 300px;
     padding: 10px;
+     background: rgba(255, 255, 255, 0.1); /* fondo translúcido */
+    backdrop-filter: blur(10px);          /* efecto de difuminado del fondo */
+   -webkit-backdrop-filter: blur(10px);  /* soporte para Safari */
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* borde tenue */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* sombra suave */
+    color: #fff;
 
   }
 
