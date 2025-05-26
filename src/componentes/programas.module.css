@@ -193,7 +193,7 @@ color: white;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 250vh;
+        height: 240vh;
     }
 
     .web h1 {
@@ -213,7 +213,7 @@ color: white;
     .contenido {
         display: flex;
         flex-direction: column;
-        margin: 20%;
+        margin: 0 20% 0 20%;
     }
 
     .imag {

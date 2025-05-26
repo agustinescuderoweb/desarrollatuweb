@@ -102,7 +102,7 @@
   .espacio {
     display: flex;
     flex-direction: column;
-    height: 160vh;
+    height: 145vh;
     justify-content: center;
     background: radial-gradient(circle at 50% 75%, rgba(255, 251, 251, 0.925), transparent 20%),
     linear-gradient(45deg, #001F54, #02235c);
